@@ -1,0 +1,12 @@
+{% extends 'saving.html' %}
+{% block title %} {{ post.title_tag }} {% endblock %}
+
+{% block content %}
+    </br>
+    <h1>{{ post.title }}</h1>
+    <small>By: {{ post.author }} | <a href="{% url 'update_post' post.pk %}">Edit</a>
+    <hr>
+    </br></br>
+    <body>{{ post.content }}</body>
+    </br></br>
+{% endblock %}
