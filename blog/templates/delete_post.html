@@ -1,0 +1,16 @@
+{% extends 'saving.html' %}
+{% block title %}포스트 삭제!{% endblock %}
+
+{% block content %}
+  <h1>Delete Post</h1>
+
+    <br/>
+    <hr>
+        <form method="POST">
+            {% csrf_token %}
+            <strong>Are you sure?</strong></br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary">Delete Post!</button>
+          </div>
+    <br/><br/>
+{% endblock %}
