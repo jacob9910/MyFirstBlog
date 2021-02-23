@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
+  <title>이영진 포트폴리오</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -32,7 +32,7 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="js-scroll-trigger" href="#page-top">개발자 이영진</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -55,11 +55,11 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Personal site for Jacob Lee</h1>
+      <h1 class="mb-1">안녕하세요 이영진입니다.</h1>
       <h3 class="mb-5">
-        <em>A Free Bootstrap Theme by Start Bootstrap</em>
+        01047496024 | dldudwls991013@gmai.com
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">포트폴리오 살펴보기</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -68,10 +68,19 @@
   <section class="content-section bg-light" id="about">
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
+        <div class="col-lg-20 mx-auto">
+          <h2>교육 배경</h2>
+          <p class="lead mb-5">한국뉴욕주립대학교 | 컴퓨터과학 전공 | 2018년 입학 | 2024년도 졸업 예정</p>
+          <h2>근무 경험</h2>
+          <p class="lead mb-5">제 6차 OECD 포럼 진행요원 | 2018.11.27 - 29<br>단기간 번역 작업</p>
+          <h2>이외의 할동</h2>
+          <p class="lead mb-5">필리핀 세부 사립고등학교 재학중 사진클럽 활동<br>다수의 학교 행사 및 세부 한인 성당 행사 사진 촬영<br>한국 예술대학교 사진 공모전 참가이력</p>
+          <h2>봉사 할동</h2>
+          <p class="lead mb-5">필리핀 세부 한인의 날 진행요원 자원봉사 | 2016.09.26 – 10.02<br>필리핀 세부 한인 영화제 홍보요원 자원봉사 | 2016.09.29 - 10.02<br>외교부 주체하 현지 학생 한글교육 실시 자원봉사<br>필리핀 세부 기술대학교 자원봉사</p>
+          <h2>언어 능력</h2>
+          <p class="lead mb-5">Toelf 미국 영어 능력 평가 시험 88점 | 2018.04.28<br>Ielts 영국 영어 능력 평가 시험 6.0 | 2017.04.29</p>
+          <h2>자격증</h2>
+          <p class="lead mb-5"> 군복무중 굴삭기 운전 기능사 취득 | 2020.08.14</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
         </div>
       </div>
@@ -143,15 +152,15 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h2 class="mb-5">현재 진행중인 프로젝트</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#!">
+          <a class="portfolio-item" href="{% url 'New' %}">
             <div class="caption">
               <div class="caption-content">
-                <div class="h2">Stationary</div>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                <div class="h2">블로그</div>
+                <p class="mb-0">장고 프레임을 이용해 만든 블로그</p>
               </div>
             </div>
             <img class="img-fluid" src="{% static 'img/portfolio-1.jpg' %}" alt="">
@@ -217,17 +226,12 @@
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/profile.php?id=100009310052517&viewas=100000686899395">
             <i class="icon-social-facebook"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
+          <a class="social-link rounded-circle text-white" href="https://github.com/jacob9910">
             <i class="icon-social-github"></i>
           </a>
         </li>

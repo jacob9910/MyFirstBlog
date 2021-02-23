@@ -27,5 +27,5 @@ class Post(models.Model):
     
     def get_absolute_url(self):
         #return reverse('Detail', args=(str(self.id)) )
-        #ㄴ왜 detail을 못 찾는건지 공부 필요함      
+        #왜 detail을 못 찾는건지 공부 필요함      
         return reverse('New')
