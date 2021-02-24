@@ -5,7 +5,7 @@ from .views import HomeView, ArticleDetailView, AddPostView, UpdatePostView, Del
 
 
 urlpatterns = [
-    path('index/',views.index, name="index"),
+    path('',views.index, name="index"),
     path('New/', HomeView.as_view(), name='New'),
     path('CreatePost/', AddPostView.as_view(), name='CreatePost'),
     path('article/<int:pk>', ArticleDetailView.as_view(), name='Detail'),
